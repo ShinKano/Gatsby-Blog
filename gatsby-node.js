@@ -15,7 +15,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
                         frontmatter {
                             title
                             path
-                            date
+                            date(formatString: "MMMM DD, YYYY")
                             author
                         }
                     }
