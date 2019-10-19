@@ -8,9 +8,9 @@ public_folder: assets
 collections:
   - name: blog
     label: Blog
-    folder: src/pages
+    folder: "src/pages/{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "index"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
